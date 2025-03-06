@@ -59,7 +59,7 @@ const BusFilterPage = () => {
 
         {/* Apply Filters Button */}
         <button
-          className="w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-400" type="submit"
+          className="w-full bg-yellow-400 text-white py-2 rounded-lg hover:bg-yellow-500" type="submit"
         >
           Apply Filters
         </button>

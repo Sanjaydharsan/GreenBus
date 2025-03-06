@@ -44,14 +44,21 @@ function Booking() {
           <div className='w-[300px] fixed mt-[130px] ' >
             <BusFilterPage />
           </div>
-          <div id='bus-details' className=' bg-gray-100 px-8 py-6 w-[950px] mt-[130px] ml-[300px] '>
+          <div id='bus-details' className=' bg-gray-100 px-8 py-6 w-[950px] mt-[130px] ml-[350px] '>
             <div className='space-y-6'>
               {busdetail.map((bus, index) => (
                 <div key={index} className='flex gap-x-8 bg-white text-gray-800 p-6 w-full justify-between rounded-2xl shadow-lg'>
-                  <div className='space-y-2'>
+                  <div className='space-y-5'>
+                    <div>
                     <h2 className="font-bold text-lg">{bus.name}</h2>
-                    <p className="text-gray-500">A/C Sleeper (2+1)</p>
-                    <p className='text-sm'>4.6 ★ Live Tracking Amenities</p>
+                    <p className="text-gray-500">A/C Sleeper (2+1)</p></div>
+                    <div className='text-sm flex gap-x-2' >
+                      <p className='bg-green text-white px-[2px] rounded-md'>4.6 ★</p> 
+                    <p className='p-[0px]'><i class="fa-solid fa-location-dot"></i></p>
+                    <p className='p-[0px]'><i class="fa-solid fa-bottle-water"></i></p>
+                    <p className='p-[0px]'><i class="fa-solid fa-plug"></i></p>
+                    <p>more +3</p>
+                     </div>
                   </div>
                   <div className='flex gap-x-8'>
                     <div className='text-center'>

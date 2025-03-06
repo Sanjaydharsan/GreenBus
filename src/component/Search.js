@@ -60,7 +60,7 @@ function Search() {
             />
 
             <button
-                className="bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 focus:outline-none"
+                className="bg-yellow-400 text-white font-bold py-2 px-4 rounded-lg hover:bg-yellow-500 focus:outline-none"
                 onClick={handleSearch}
             >
                 SEARCH

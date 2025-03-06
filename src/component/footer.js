@@ -1,39 +1,20 @@
-// import React from "react";
-
-// const Footer = () => {
-//   return (
-//     <footer className="bg-green text-white py-6">
-//       <div className="container mx-auto  justify-between" >
-
-
-//         <div>
-//         <div className='text-3xl font-bold'>GREEN BUS</div> 
-//           <h2 className="text-lg font-semibold text-white mb-4">Contact Us</h2>
-//           <p className="text-sm">Email: support@greenbus.com</p>
-//           <p className="text-sm">Phone: +123 456 7890</p>
-//           <p className="text-sm mt-2">Follow us:</p>
-//         </div>
-//       </div>
-//       <div className="border-t border-white mt-6 pt-4 text-center text-sm">
-//         © {new Date().getFullYear()} GreenBus. All rights reserved.
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
-
-// Footer.js
 import React from 'react';
 
 const Footer = () => {
   return (
     <footer className="bg-green text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
-          {/* Column 1: Links */}
+        {/* Footer Grid Layout */}
+        <div className="grid md:grid-cols-5 gap-8">
+          
+          {/* Column 1: Branding and Description */}
           <div>
+            <h1 className="text-3xl font-bold">Green Bus</h1>
+            <p className="mb-8">India's No. 1 Online Bus Ticket Booking Site</p>
+          </div>
+
+          {/* Column 2: Company Links */}
+          <div className="pl-12">
             <h3 className="font-semibold text-lg">Company</h3>
             <ul className="mt-4 space-y-2">
               <li><a href="#" className="text-white hover:underline">About Us</a></li>
@@ -44,8 +25,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 2: Services */}
-          <div>
+          {/* Column 3: Services */}
+          <div className="pl-12">
             <h3 className="font-semibold text-lg">Services</h3>
             <ul className="mt-4 space-y-2">
               <li><a href="#" className="text-white hover:underline">Bus Tickets</a></li>
@@ -55,8 +36,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Customer Care */}
-          <div>
+          {/* Column 4: Customer Support */}
+          <div className="pl-12">
             <h3 className="font-semibold text-lg">Customer Care</h3>
             <ul className="mt-4 space-y-2">
               <li><a href="#" className="text-white hover:underline">Help Center</a></li>
@@ -66,26 +47,28 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Social Media */}
-          <div>
+          {/* Column 5: Social Media Links */}
+          <div className="pl-12">
             <h3 className="font-semibold text-lg">Follow Us</h3>
             <div className="mt-4 flex space-x-4">
               <a href="#" className="text-white hover:underline">
-                <i className="fab fa-facebook-f"></i> {/* FontAwesome icon */}
+                <i className="fab fa-facebook-f"></i> {/* Facebook Icon */}
               </a>
               <a href="#" className="text-white hover:underline">
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i> {/* Twitter Icon */}
               </a>
               <a href="#" className="text-white hover:underline">
-                <i className="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i> {/* Instagram Icon */}
               </a>
               <a href="#" className="text-white hover:underline">
-                <i className="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin"></i> {/* LinkedIn Icon */}
               </a>
             </div>
           </div>
+
         </div>
         
+        {/* Footer Bottom Section */}
         <div className="mt-8 border-t border-white pt-4 text-center text-sm">
           <p>© 2025 GreenBus. All rights reserved.</p>
         </div>

@@ -1,10 +1,12 @@
 // LoginPage.jsx
 import React from "react";
+import Navbar from "./Navbar";
 
 const LoginPage = () => {
   
-  return (
-    <div className="flex items-center justify-center h-[88vh] ">
+  return (<>
+  <Navbar />
+    <div className="flex items-center justify-center h-[88vh] bg-gray-100 ">
       <div className="w-full max-w-md p-6 bg-white rounded-2xl shadow-lg">
         <h2 className="mb-6 text-2xl font-bold text-center text-gray-800">
           Login
@@ -52,6 +54,7 @@ const LoginPage = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
